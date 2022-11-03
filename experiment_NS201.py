@@ -328,11 +328,11 @@ def main():
     TEXT_STIMULUS = visual.TextStim(win, text=" ", pos=(0, 0), wrapWidth=700, alignText='left')
     '''# training
     motion_task(win, moving_stimulus,fixation_stimulus,response_stimlus,TEXT_STIMULUS,speed=0.08, n_blocks=4,training=True,
-                 savepath=ON_CENTER_TRAIN_PATH)'''
+                 savepath=ON_CENTER_TRAIN_PATH)
 
     # test
     motion_task(win, moving_stimulus,fixation_stimulus,response_stimlus,TEXT_STIMULUS,speed=0.04, n_blocks=16, training=False,
-                 savepath=ON_CENTER_TEST_PATH)
+                 savepath=ON_CENTER_TEST_PATH)'''
 
     fixation_stimulus.pos = np.array([WINDOW_DIMENSIONS / 2 - 50])
     response_stimlus.pos = fixation_stimulus.pos
